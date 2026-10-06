@@ -15,3 +15,13 @@ variable "project_name" {
   type        = string
   default     = "aws-production-platform"
 }
+
+variable "availability_zones" {
+  description = "Availability Zones used by the environment"
+  type        = list(string)
+
+  default = [
+    "us-east-1a",
+    "us-east-1b"
+  ]
+}
