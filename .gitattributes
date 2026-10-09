@@ -1,0 +1,12 @@
+# Use LF line endings for shell scripts and Unix-based configuration
+
+*.sh text eol=lf
+
+# Keep Terraform files consistent across operating systems
+
+*.tf text eol=lf
+*.tfvars text eol=lf
+
+# Use LF for CI/CD workflows
+
+.github/workflows/* text eol=lf
