@@ -27,3 +27,19 @@ output "launch_template_id" {
   description = "ID of the application launch template"
   value       = aws_launch_template.app.id
 }
+
+
+output "rds_identifier" {
+  description = "Identifier of the RDS database"
+  value       = aws_db_instance.main.identifier
+}
+
+output "rds_endpoint" {
+  description = "Network endpoint of the private RDS database"
+  value       = aws_db_instance.main.endpoint
+}
+
+output "rds_port" {
+  description = "Port used by the RDS database"
+  value       = aws_db_instance.main.port
+}
