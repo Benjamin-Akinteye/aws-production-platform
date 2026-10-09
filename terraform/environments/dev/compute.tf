@@ -5,6 +5,10 @@ resource "aws_launch_template" "app" {
 
   instance_type = "t3.micro"
 
+  iam_instance_profile {
+    name = aws_iam_instance_profile.app.name
+  }
+
   vpc_security_group_ids = [
     aws_security_group.app.id
   ]
